@@ -1,0 +1,21 @@
+{
+  "name": "PrismAI",
+  "rank": "auntit17714070710191",
+  "request": {
+    "type": "http",
+    "url": "localhost:8080/",
+    "scripts": {
+      "preRequest": "",
+      "postResponse": ""
+    },
+    "method": "GET",
+    "queryParams": [],
+    "headers": [],
+    "body": "",
+    "contentType": "text/plain",
+    "auth": {
+      "currentAuthType": "INHERIT",
+      "authConfigStore": {}
+    }
+  }
+}
