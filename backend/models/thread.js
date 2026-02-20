@@ -29,13 +29,13 @@ const threadSchema = new Schema({
     },
     messages: [messageSchema],
     createdAt: {
-        type: String,
+        type: Date,
         default: Date.now
     },
     updatedAt: {
-        type: String,
+        type: Date,
         default: Date.now   
     }
 });
 
-export default mongoose.model("Thread", ThreadSchema);
+export default mongoose.model("Thread", threadSchema);

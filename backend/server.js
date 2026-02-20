@@ -1,14 +1,11 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import axios from "axios";
 import bodyParser from "body-parser";
-import fs from 'fs';
-import path from 'path';
-import { GoogleGenerativeAI } from "@google/generative-ai";
 const app = express();
 dotenv.config();
 import mongoose from "mongoose";
+import chatRoutes from './routes/chat.js'; 
 
 const port = 8080;
 
@@ -24,6 +21,8 @@ app.listen(port, ()=> {
     console.log(`server running on port ${port}`);
     connectDB();
 });
+
+app.use("/api", chatRoutes);
 
 const connectDB = async() => {
     try {

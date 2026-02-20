@@ -1,18 +1,18 @@
 {
   "name": "PrismAI",
-  "rank": "auntit17714070710191",
+  "rank": "aprism17715633304151",
   "request": {
     "type": "http",
-    "url": "localhost:8080/",
+    "url": "localhost:8080/chat",
     "scripts": {
       "preRequest": "",
       "postResponse": ""
     },
-    "method": "GET",
+    "method": "POST",
     "queryParams": [],
     "headers": [],
-    "body": "",
-    "contentType": "text/plain",
+    "body": "{\n  \"question\": \"Which is the largest country in the world by area\"\n}",
+    "contentType": "application/json",
     "auth": {
       "currentAuthType": "INHERIT",
       "authConfigStore": {}
